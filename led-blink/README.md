@@ -9,6 +9,30 @@ The goal of this project is to get familiar with:
 - Basic Arduino setup
 
 
+## Components and Tools 💡
+
+This project was developed using the following components and tools:
+.Hardware
+
+ESP32 Dev Board – microcontroller used to control the LED
+
+LED Diode – visual indicator that blinks
+
+220Ω Resistor – limits current to the LED
+
+Breadboard and 2xJumper Wires – for prototyping connections
+
+USB Cable – for programming and power supply
+
+.Software
+
+Arduino IDE – used to program the ESP32
+
+ESP32 Board Libraries – necessary libraries for ESP32 support
+
+
+
+
 ![ESP32 Wiring ](images/blink.jpg)
 
 ![ESP32 Wiring ](images/noblink.jpg)
