@@ -12,6 +12,7 @@ The goal of this project is to get familiar with:
 ## Components and Tools 💡
 
 This project was developed using the following components and tools:
+
 .Hardware
 
 ESP32 Dev Board – microcontroller used to control the LED
