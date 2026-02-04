@@ -34,14 +34,17 @@ ESP32 Board Libraries – necessary libraries for ESP32 support
 
 
 
+
+
 ![ESP32 Wiring ](images/blink.jpg)
 
 ![ESP32 Wiring ](images/noblink.jpg)
 
+
 ## 🔌 Wiring
 The LED is connected to GPIO 2 through a resistor.
 
-🔌 Circuit Connections Explanation
+### 🔌 Circuit Connections Explanation
 1. Ground Connection (GND)
 
 The wire connects the shorter leg of the LED (the cathode) to the GND (ground) pin of the expansion board.
@@ -79,7 +82,7 @@ Pin → Resistor → LED → GND
 The resistor sets the current 𝐼 to a safe value (typically between 10 mA and 20 mA) according to the formula: 𝐼=3.3𝑉−𝑉_𝐿𝐸𝐷/𝑅
 	​
 
-🔎 Why GPIO 2 Is Often Used (and Its Constraints)
+### 🔎 Why GPIO 2 Is Often Used (and Its Constraints)
 Practical reason: the on-board LED
 
 On most ESP32 development boards (including the classic version), GPIO 2 is physically connected to an on-board blue LED.
