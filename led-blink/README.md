@@ -48,7 +48,7 @@ The resistor is essential. Once an LED’s forward voltage V_LED is exceeded, it
 Without a resistor, applying Ohm’s law 𝐼=𝑉/𝑅 with 𝑅≈0 would cause a very large current (short circuit), potentially damaging the LED or the microcontroller pin.
 
 Series configuration:
-All components are connected in series, so the same current flows through:
+All components are connected in series, so the same current flows through: 
 Pin → Resistor → LED → GND
 
 The resistor sets the current 𝐼 to a safe value (typically between 10 mA and 20 mA) according to the formula: 𝐼=3.3𝑉−𝑉_𝐿𝐸𝐷/𝑅
