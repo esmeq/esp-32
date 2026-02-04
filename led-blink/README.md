@@ -13,7 +13,7 @@ The goal of this project is to get familiar with:
 
 This project was developed using the following components and tools:
 
-.Hardware
+### Hardware
 
 ESP32 Dev Board – microcontroller used to control the LED
 
@@ -25,7 +25,7 @@ Breadboard and 2xJumper Wires – for prototyping connections
 
 USB Cable – for programming and power supply
 
-.Software
+### Software
 
 Arduino IDE – used to program the ESP32
 
