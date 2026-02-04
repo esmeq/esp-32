@@ -8,12 +8,14 @@ The goal of this project is to get familiar with:
 - Digital output
 - Basic Arduino setup
 
-## 🔌 Wiring
-The LED is connected to GPIO 2 through a resistor.
 
 ![ESP32 Wiring ](images/blink.jpg)
 
 ![ESP32 Wiring ](images/noblink.jpg)
+
+## 🔌 Wiring
+The LED is connected to GPIO 2 through a resistor.
+
 🔌 Circuit Connections Explanation
 1. Ground Connection (GND)
 
@@ -42,52 +44,14 @@ When the pin is set to HIGH (logic 1), it outputs 3.3V, allowing current to flow
 When the pin is set to LOW (logic 0), it outputs 0V, there is no potential difference, and the LED turns off.
 
 Current limiting (resistor):
-The resistor is essential. Once an LED’s forward voltage 
-𝑉
-𝐿
-𝐸
-𝐷
-V
-LED
-	​
-
- is exceeded, its internal resistance becomes very small.
-Without a resistor, applying Ohm’s law 
-𝐼
-=
-𝑉
-/
-𝑅
-I=V/R with 
-𝑅
-≈
-0
-R≈0 would cause a very large current (short circuit), potentially damaging the LED or the microcontroller pin.
+The resistor is essential. Once an LED’s forward voltage V_LED is exceeded, its internal resistance becomes very small.
+Without a resistor, applying Ohm’s law 𝐼=𝑉/𝑅 with 𝑅≈0 would cause a very large current (short circuit), potentially damaging the LED or the microcontroller pin.
 
 Series configuration:
 All components are connected in series, so the same current flows through:
 Pin → Resistor → LED → GND
 
-The resistor sets the current 
-𝐼
-I to a safe value (typically between 10 mA and 20 mA) according to the formula:
-
-𝐼
-=
-3.3
-𝑉
-−
-𝑉
-𝐿
-𝐸
-𝐷
-𝑅
-I=
-R
-3.3V−V
-LED
-	​
-
+The resistor sets the current 𝐼 to a safe value (typically between 10 mA and 20 mA) according to the formula: 𝐼=3.3𝑉−𝑉_𝐿𝐸𝐷/𝑅
 	​
 
 🔎 Why GPIO 2 Is Often Used (and Its Constraints)
