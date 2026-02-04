@@ -11,7 +11,8 @@ The goal of this project is to get familiar with:
 ## 🔌 Wiring
 The LED is connected to GPIO 2 through a resistor.
 
-![ESP32 Wiring diagram]()
+![ESP32 Wiring ](images/blink.jpg) 
+![ESP32 Wiring ](images/noblink.jpg)
 
 ## 💻 Code
 
